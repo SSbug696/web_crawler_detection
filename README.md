@@ -1,6 +1,6 @@
-# Web crawler detection
+# Web crawler and parsers detection
 
-### Module on the LUA for detecting robots search engines.
+### Module on the LUA for detecting robots search engines. Can detect parsing the site and block IP
 
 access - defines and logs the crawler
 
