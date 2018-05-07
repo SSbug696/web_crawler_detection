@@ -1,6 +1,6 @@
-# web_crawler_detection
+# Web crawler detection
 
-Module on the LUA for detecting robots search engines.
+##Module on the LUA for detecting robots search engines.
 
 access - defines and logs the crawler
 freq - defines parsers and blocks them
