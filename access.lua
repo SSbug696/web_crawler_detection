@@ -27,7 +27,7 @@ local white_list = {
 
 function isNetAccess(ip) 
   local exist_flag = false
-  -- Detect crowler by header
+  -- Detect crawler by header
   -- local service_id = available_header[header]
   local min = 0
   local max = 0
@@ -51,7 +51,7 @@ function isNetAccess(ip)
   return exist_flag
 end
 
---- Method detection search engines crowlers
+--- Method detection search engines crawlers
 function accessUA(user_agent)
 	local available_uagents = {
         	'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)',

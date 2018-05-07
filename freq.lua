@@ -2,17 +2,17 @@ local _L = {}
 
 function _L.log(host, remote_addr)
 	local time_pick = nil
+
 	local REQUEST_LIMIT_ANALYZE = 10
-	local req_counter = 0
-	local arr_range_tpicks = {}
 	local ABNORMAL_COEF = 4 
-	
 	local REQUEST_LIMIT = 5000
 	local TIME_USER_LOCK = 5
-	local TIME_EXPIRE_REQUEST = 60
+	local TIME_EXPIRE_REQUEST = 60	
 
+	local req_counter = 0
+	local arr_range_tpicks = {}
 	local tmp_tick_value = nil
-	local detect_heigth_freq = nil
+	local detect_height_freq = nil
 
         local h = os.date('%H')
         local second = os.time()
@@ -100,7 +100,7 @@ function _L.log(host, remote_addr)
             					
 						-- If detect normal behavor for client to toggle flag
 	            				if trange > ABNORMAL_COEF then
-        	        				detect_heigth_freq = false
+        	        				detect_height_freq = false
 							break
             					end
 					            
@@ -124,7 +124,7 @@ function _L.log(host, remote_addr)
                 detect_height_freq = false
         end
 
-	if detect_heigth_freq then 
+	if detect_height_freq then 
 		return false
 	else
 		return true
