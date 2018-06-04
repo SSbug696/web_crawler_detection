@@ -1,6 +1,6 @@
-# Web crawler and parsers detection
+## Web crawler and parsers detection NGINX/lua
 
-### Module on the LUA for detecting robots search engines. Can detect parsing the site and block IP. Protection of web resources from parsing
+#### Module on the LUA for detecting robots search engines. Can detect parsing the site and block IP. Protection of web resources from parsing
 
 
 access - defines and logs the crawler
